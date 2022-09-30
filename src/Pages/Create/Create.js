@@ -113,7 +113,7 @@ const Create = () => {
               />
             </label> */}
 
-            <label className="bg-gradient-to-r from-darkPurple to-lightPurple text-white px-2 py-2 mt-2 rounded-md">
+            <label className="bg-darkPurple text-white px-2 py-2 mt-2 rounded-md">
               <input
                 className=""
                 type="submit"

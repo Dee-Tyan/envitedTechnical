@@ -19,8 +19,14 @@ const Create = () => {
        const handleData = (e) => {
         e.preventDefault()
         displayData()
-      
-        
+        const myObj = {
+          eventName,
+          hostName,
+          location,
+          start,
+          end,
+        }
+        localStorage.setItem("mydata", JSON.stringify(myObj)) 
       }
 
       const displayData = () => {   

@@ -12,6 +12,11 @@ import read from "../../assets/read.svg";
 import upload from "../../assets/upload.svg";
 
 const Event = () => {
+
+  const myData = JSON.parse(localStorage.getItem("mydata"))
+  console.log(myData)
+
+
   return (
     <div className=" flex items-center justify-center ">
       <div className="py-4 xl:py-5 px-4 bg-bgcolor">
@@ -23,7 +28,7 @@ const Event = () => {
         <h1 className="text-darkPurple bg-clip-text text-darkPurple text-4xl">Birthday Bash</h1>
         <div className="text-base text-center py-4">
             <p className="w-80 text-txt font-light text-base">
-              Hosted by Elysia
+              Hosted by {myData.hostName}
             </p>
           </div>
         </section>
